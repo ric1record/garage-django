@@ -10,6 +10,6 @@ router.register(r"categorias", CategoriaViewSet)
 router.register(r"marcas", MarcaViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path("admin/", admin.site.urls),
+    path("", include(router.urls)),
 ]
